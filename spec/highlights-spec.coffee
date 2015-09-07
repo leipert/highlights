@@ -1,7 +1,7 @@
 path = require 'path'
 Highlights = require '../src/highlights'
 
-describe "Highlights", ->
+xdescribe "Highlights", ->
   describe "when an includePath is specified", ->
     it "includes the grammar when the path is a file", ->
       highlights = new Highlights(includePath: path.join(__dirname, 'fixtures', 'includes'))
