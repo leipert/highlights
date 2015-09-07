@@ -12,7 +12,7 @@ class Highlights
   #                  register.
   #   :registry    - An optional GrammarRegistry instance.
   constructor: ({@includePath, @registry}={}) ->
-    throw new Error 'Registry is Mandatory' if @registry?
+    throw new Error 'Registry is Mandatory' if not @registry
 
   loadGrammarsSync: ->
     return if @registry.grammars.length > 1

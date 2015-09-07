@@ -1,5 +1,7 @@
 # Readme
 
-Copy of highlights package which uses atoms native first-mate bindings, to prevent compilation errors from happening.
+Highlights package without first-mate.
 
-Usage in markdown-preview-plus.
+For usage in atom, if you pass a Grammar Registry anyway.
+
+Is used in markdown-preview-plus.

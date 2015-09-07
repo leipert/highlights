@@ -24,7 +24,6 @@
     "season": "^5.1.2"
   },
   "devDependencies": {
-    "first-mate": "^5.0.0",
     "grunt": "^0.4.4",
     "grunt-cli": "^0.1.13",
     "grunt-coffeelint": "0.0.8",
