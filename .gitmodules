@@ -85,3 +85,6 @@
 [submodule "deps/language-clojure"]
 	path = deps/language-clojure
 	url = https://github.com/atom/language-clojure
+[submodule "language-coffee-script"]
+	path = language-coffee-script
+	url = git@github.com:atom/language-coffee-script.git

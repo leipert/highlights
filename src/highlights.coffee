@@ -2,7 +2,20 @@ path = require 'path'
 _ = require 'underscore-plus'
 fs = require 'fs-plus'
 CSON = require 'season'
-{GrammarRegistry} = require 'first-mate'
+GrammarRegistry = null
+
+init = ->
+  if atom?
+    firstmatePath = path.join(
+      atom.packages.resourcePath,
+      '/node_modules/first-mate/lib/grammar-registry'
+      )
+
+    GrammarRegistry = require(firstmatePath).GrammarRegistry
+  else
+    {GrammarRegistry} = require('first-mate')
+
+init()
 
 module.exports =
 class Highlights
@@ -68,9 +81,10 @@ class Highlights
   highlightSync: ({filePath, fileContents, scopeName}={}) ->
     @loadGrammarsSync()
 
+    scopeName ?= "text.plain.null-grammar"
+
     fileContents ?= fs.readFileSync(filePath, 'utf8') if filePath
     grammar = @registry.grammarForScopeName(scopeName)
-    grammar ?= @registry.selectGrammar(filePath, fileContents)
     lineTokens = grammar.tokenizeLines(fileContents)
 
     # Remove trailing newline

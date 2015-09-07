@@ -1,7 +1,7 @@
 {
-  "name": "highlights",
+  "name": "highlights-native",
   "version": "1.2.0",
-  "description": "Syntax highlighter",
+  "description": "Syntax highlighter with native atom bindings",
   "main": "lib/highlights.js",
   "scripts": {
     "test": "grunt test",
@@ -11,21 +11,20 @@
   "bin": "bin/highlights",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/highlights"
+    "url": "https://github.com/leipert/highlights-native"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atom/highlights/issues"
+    "url": "https://github.com/leipert/highlights-native/issues"
   },
-  "homepage": "https://github.com/atom/highlights",
   "dependencies": {
-    "first-mate": "^3.0.0",
     "optimist": "^0.6.1",
     "underscore-plus": "^1.5.1",
     "fs-plus": "^2.2.6",
     "season": "^5.1.2"
   },
   "devDependencies": {
+    "first-mate": "^5.0.0",
     "grunt": "^0.4.4",
     "grunt-cli": "^0.1.13",
     "grunt-coffeelint": "0.0.8",
