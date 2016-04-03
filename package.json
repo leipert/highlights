@@ -11,11 +11,11 @@
   "bin": "bin/highlights",
   "repository": {
     "type": "git",
-    "url": "https://github.com/leipert/highlights-native"
+    "url": "https://github.com/leipert/highlights"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leipert/highlights-native/issues"
+    "url": "https://github.com/leipert/highlights/issues"
   },
   "dependencies": {
     "optimist": "^0.6.1",
